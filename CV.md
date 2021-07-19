@@ -11,4 +11,11 @@ I want to be Frontend-developer.
 ## Skills
 HTML, CSS, JavaScript, Git, Gulp, Sass/Scss.
 
+## Code examples
+```
+function mango(quantity, price){
+    return  (quantity - Math.floor(quantity / 3)) * price;
+    }
+```
+
 
