@@ -18,4 +18,13 @@ function mango(quantity, price){
     }
 ```
 
+## Work experience
+* Tanki Online, Technical support specialist (2012-2019)
+* Freelance (2019 - present)
+
+## Education
+Perm State Technical University (2010 - 2016)
+
+## English level
+B1 (Intermediate)
 
