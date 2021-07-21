@@ -4,6 +4,14 @@ p {
     padding: 0;
 }
 
+body {
+    position: relative;
+    width: 600px;
+    margin: 0 auto;
+    padding-top: 20px;
+    padding-left: 30px;
+} 
+
 .visually-hidden {
     position: absolute;
     width: 1px;
@@ -16,12 +24,6 @@ p {
     clip: rect(0 0 0 0);
     overflow: hidden;
   }
-
-.container {
-    position: relative;
-    width: 900px;
-    margin: 0 auto;
-}
 
 .name {
     font-family: Arial;
@@ -49,5 +51,15 @@ p {
     right: 50px;
 }
 
+.experience {
+    width: 450px;
+    margin-top: 90px;
+}
 
+.skills {
+    position: absolute;
+    top: 215px;
+    right: 47px;
+    width: 140px;
+}
 
