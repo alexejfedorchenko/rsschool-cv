@@ -30,7 +30,7 @@ p {
 header {
     position: relative;
     height: 125px;
-    padding: 20px;
+    padding: 20px 0;
   }
 
 .name {
@@ -52,7 +52,7 @@ header {
 
 .photo {
     position: absolute;
-    top: 0;
+    top: 20px;
     right: 70px;
 }
 
@@ -66,7 +66,6 @@ header {
 .examples {
     width: 320px;
     margin-top: 20px;
-    padding-left: 20px;
     font-size: 14px;
     line-height: 17px;
 }
@@ -92,7 +91,7 @@ header {
 
 .skills {
     position: absolute;
-    top: 0;
+    top: 185px;
     right: 40px;
     width: 170px;
     font-size: 14px;
@@ -123,4 +122,35 @@ header {
     font-family: courier, monospace;
     padding: 0 3px;
     background-color: #eee;
+}
+
+footer {
+    height: 50px;
+}
+
+.social {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 50px;
+}
+
+.social .github {
+    font-size: 14px;
+    color: #000000;
+}
+
+.social .rs-logo {
+    height: 30px;
+}
+
+.rs-logo img {
+    display: block;
+    height: 30px;
+}
+
+.social p {
+    font-size: 14px;
+    font-weight: 700;
 }

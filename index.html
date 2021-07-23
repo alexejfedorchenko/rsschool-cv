@@ -8,8 +8,8 @@
     <link rel="stylesheet" href="styles/style.css">
 </head>
 <body>
-    <header>
-        <div class="container">
+    <div class="container">
+        <header>
             <!-- Personal inforomation -->
             <h1 class="visually-hidden">Personal information</h1>
             <p class="name">Aleksey Fedorchenko</p>
@@ -22,11 +22,9 @@
             <div class="photo">
                 <img src="/images/photo.png" width="120" height="120" alt="photo">
             </div>
-        </div>
-    </header>
+        </header>
     
-    <main>
-        <div class="container">
+        <main>
             <!-- Experience section -->
             <section class="experience">
                 <h2>Experience</h2>
@@ -48,7 +46,7 @@
                     </ul>
                 </div>
             </section>
-
+    
             <!-- Education section -->
             <section class="education">
                 <h2>Education</h2>
@@ -65,7 +63,7 @@
                     <p class="education_place">SitePoint, 2021</p>
                 </div>
             </section>
-
+    
             <!-- Skills -->
             <aside class="skills">
                 <h2>Skills</h2>
@@ -95,7 +93,7 @@
                     </li>
                 </ul>  
             </aside>
-
+    
             <!-- Code examples -->
             <section class="examples">
                 <h2>Code examples</h2>
@@ -103,8 +101,15 @@
                     return a * b
                 }</code></pre>
             </section>
-        </div>
-    </main>
-
+        </main>
+    
+        <footer>
+                <div class="social">
+                    <a class="github" href="https://github.com/aleksey-fed/">My GitHub</a>
+                    <p class="footer_year">2021</p>
+                    <a class="rs-logo" href="https://rs.school/js/"><img src="/images/rs_school_js.svg" alt="The Rolling Scopes"></a>
+                </div>
+        </footer>
+    </div>
 </body>
 </html>
