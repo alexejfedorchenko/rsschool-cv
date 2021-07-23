@@ -2,15 +2,11 @@ html,
 p {
     margin: 0;
     padding: 0;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    letter-spacing: 0px;
 }
-
-body {
-    position: relative;
-    width: 600px;
-    margin: 0 auto;
-    padding-top: 20px;
-    padding-left: 30px;
-} 
 
 .visually-hidden {
     position: absolute;
@@ -25,41 +21,106 @@ body {
     overflow: hidden;
   }
 
+.container {
+    position: relative;
+    width: 600px;
+    margin: 0 auto;
+}
+
+header {
+    position: relative;
+    height: 125px;
+    padding: 20px;
+  }
+
 .name {
-    font-family: Arial;
     font-size: 24px;
-    font-style: normal;
-    font-weight: 400;
     line-height: 28px;
-    letter-spacing: 0px;
-    text-align: left;
+    font-weight: 700;
 }
 
 .role {
-    font-family: Arial;
-    font-size: 17px;
-    font-style: normal;
-    font-weight: 400;
+    font-size: 17px;   
     line-height: 28px;
-    letter-spacing: 0px;
-    text-align: left;
+}
+
+.contacts {
+    padding: 0;
+    list-style: none;
+    font-size: 14px;
 }
 
 .photo {
     position: absolute;
-    top: 10px;
-    right: 50px;
+    top: 0;
+    right: 70px;
 }
 
-.experience {
-    width: 450px;
-    margin-top: 90px;
+.photo img {
+    width: 120px;
+    height: 120px;
+}
+
+.experience,
+.education,
+.examples {
+    width: 320px;
+    margin-top: 20px;
+    padding-left: 20px;
+    font-size: 14px;
+    line-height: 17px;
+}
+
+.experience_item,
+.education_item {
+    margin-top: 10px;
+    border-bottom: 1px solid #000000;
+}
+
+.education_item {
+    padding-bottom: 10px;
+}
+
+.education_item .education_faculty {
+    font-weight: 700;
+}
+
+.education_item .education_place {
+    font-size: 12px;
+    font-style: italic;
 }
 
 .skills {
     position: absolute;
-    top: 215px;
-    right: 47px;
-    width: 140px;
+    top: 0;
+    right: 40px;
+    width: 170px;
+    font-size: 14px;
 }
 
+.skills h2 {
+    margin-top: 0;
+}
+
+.skills ul {
+    padding: 0;
+    list-style: none;
+}
+
+.skills_item {
+    margin-top: 10px;
+}
+
+.skills_item .item_title {
+    font-weight: bold;
+}
+.skills_item .item_description {
+    margin-top: 10px;
+}
+
+.examples code {
+    border-radius: 3px;
+    font-family: courier, monospace;
+    padding: 0 3px;
+    background-color: #eee;
+}
