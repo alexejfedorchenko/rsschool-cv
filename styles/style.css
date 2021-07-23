@@ -1,0 +1,156 @@
+html,
+p {
+    margin: 0;
+    padding: 0;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    letter-spacing: 0px;
+}
+
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+  }
+
+.container {
+    position: relative;
+    width: 600px;
+    margin: 0 auto;
+}
+
+header {
+    position: relative;
+    height: 125px;
+    padding: 20px 0;
+  }
+
+.name {
+    font-size: 24px;
+    line-height: 28px;
+    font-weight: 700;
+}
+
+.role {
+    font-size: 17px;   
+    line-height: 28px;
+}
+
+.contacts {
+    padding: 0;
+    list-style: none;
+    font-size: 14px;
+}
+
+.photo {
+    position: absolute;
+    top: 20px;
+    right: 70px;
+}
+
+.photo img {
+    width: 120px;
+    height: 120px;
+}
+
+.experience,
+.education,
+.examples {
+    width: 320px;
+    margin-top: 20px;
+    font-size: 14px;
+    line-height: 17px;
+}
+
+.experience_item,
+.education_item {
+    margin-top: 10px;
+    border-bottom: 1px solid #000000;
+}
+
+.education_item {
+    padding-bottom: 10px;
+}
+
+.education_item .education_faculty {
+    font-weight: 700;
+}
+
+.education_item .education_place {
+    font-size: 12px;
+    font-style: italic;
+}
+
+.skills {
+    position: absolute;
+    top: 185px;
+    right: 40px;
+    width: 170px;
+    font-size: 14px;
+}
+
+.skills h2 {
+    margin-top: 0;
+}
+
+.skills ul {
+    padding: 0;
+    list-style: none;
+}
+
+.skills_item {
+    margin-top: 10px;
+}
+
+.skills_item .item_title {
+    font-weight: bold;
+}
+.skills_item .item_description {
+    margin-top: 10px;
+}
+
+.examples code {
+    border-radius: 3px;
+    font-family: courier, monospace;
+    padding: 0 3px;
+    background-color: #eee;
+}
+
+footer {
+    height: 50px;
+}
+
+.social {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 50px;
+}
+
+.social .github {
+    font-size: 14px;
+    color: #000000;
+}
+
+.social .rs-logo {
+    height: 30px;
+}
+
+.rs-logo img {
+    display: block;
+    height: 30px;
+}
+
+.social p {
+    font-size: 14px;
+    font-weight: 700;
+}
