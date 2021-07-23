@@ -59,7 +59,7 @@ header {
 .photo img {
     width: 120px;
     height: 120px;
-    background: url("https://aleksey-fed.github.io/rsschool-cv/images/photo.png") center ( cover / center ) no-repeat;
+    background: url(/images/photo.png) center ( cover / center ) no-repeat;
 }
 
 .experience,
