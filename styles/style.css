@@ -59,7 +59,7 @@ header {
 .photo img {
     width: 120px;
     height: 120px;
-    background: url("./images/photo.png") center ( cover / center ) no-repeat;
+    background: url(./images/photo.png) center ( cover / center ) no-repeat;
 }
 
 .experience,
@@ -90,6 +90,7 @@ header {
 .examples {
     width: 320px;
     margin-top: 20px;
+    padding-left: 20px;
     font-size: 14px;
     line-height: 17px;
 }
