@@ -122,17 +122,6 @@ p {
     font-size: 14px;
 }
 
-
-
-
-/* .contacts__item a {
-    color: #ffffff;
-    text-decoration: none;
-} */
-
-
-
-
 /* About me section */
 
 .aboutme {
@@ -147,7 +136,6 @@ p {
     width: 800px;
     padding: 20px 50px;
     margin: 0 auto;
-
     font-size: 20px;
     line-height: 26px;
     text-align: center;
@@ -214,7 +202,6 @@ p {
     color: #ffffff;
     border-radius: 3%;
     background: #3a3b3c;
-
 }
 
 .project__item .project__link {
