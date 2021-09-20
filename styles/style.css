@@ -50,23 +50,21 @@ p {
 }
 	
 
-.nav__list {
+.menu {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
     list-style: none;
-    padding: 0;
-    margin: 0;  
 }
 
-.nav__list a {
+.menu__item a {
     font-size: 20px;
     color: #ffffff;
     text-transform: uppercase;
     text-decoration: none;
 }
 
-.nav__list a:hover {
+.menu__item a:hover {
     color: #cacaca;
 }
 
@@ -82,7 +80,6 @@ p {
 
 .photo img {
     display: block;
-    /* margin: 0 auto; */
     width: 200px;
     height: 200px;
     background: url(./images/photo.png) center ( cover / center ) no-repeat;
@@ -134,8 +131,9 @@ p {
 
 .aboutme__text {
     width: 800px;
-    padding: 20px 50px;
+    padding: 0 50px;
     margin: 0 auto;
+    margin-top: 20px;
     font-size: 20px;
     line-height: 26px;
     text-align: center;
@@ -150,20 +148,19 @@ p {
     padding: 50px 0;
 }
 
-.skills ul {
+.skills .skill__list {
     display: flex;
     flex-direction: row;
     justify-content: center;
+    column-gap: 20px;
     flex-wrap: wrap;
 
-    padding: 0;
     list-style: none;
 }
 
 .skills_item {
     width: 550px;
     margin-top: 30px;
-
 }
 
 .skills_item .item_title {
@@ -171,6 +168,7 @@ p {
     font-size: 20px;
     text-transform: uppercase;
 }
+
 .skills_item .item_description {
     margin-top: 10px;
 } 
@@ -238,19 +236,17 @@ p {
     text-align: center;
 }
 
-
 /* Experience section  */
 
 .experience {
     padding: 50px 0;
-    /* background: #4cb7e6; */
     background: #f6f6f6;
 }
 
 .experience__wrapper {
     display: flex;
     justify-content: center;
-    column-gap: 50px;
+    column-gap: 30px;
 }
 
 .experience__title {
@@ -289,7 +285,6 @@ p {
     margin-top: 10px;
 }
 
-
 /* Education section */
 
 .education {
@@ -315,7 +310,6 @@ p {
 
     border: 2px solid #3a3b3c;
     border-radius: 5px;
-    /* background: #4cb7e6; */
     background: #f6f6f6;
 }
 
@@ -337,7 +331,6 @@ p {
 
 .examples {
     padding: 50px 0;
-    /* background: #4cb7e6; */
     background: #f6f6f6;
 }
 
@@ -346,6 +339,7 @@ p {
 
     font-size: 18px;
     font-weight: 700;
+    text-align: center;
 }
 
 .examples__title {
@@ -356,7 +350,6 @@ p {
     margin-top: 20px;
     width: 600px;
 }
-
 
 /* Footer */
 
@@ -379,7 +372,6 @@ p {
     position: relative;
     font-size: 14px;
     color: #ffffff;
-    
 }    
 
 .icon img,
@@ -404,7 +396,236 @@ p {
     font-weight: 400;
 }
 
+@media ( max-width: 1400px ) {
+    .container {
+        max-width: 1199px;
+    }
+}
 
+@media ( max-width: 1200px ) {
+    .container {
+        max-width: 992px;
+    }
+    
+    .menu {
+        padding: 0 40px;
+    }
 
+    .skills .skill__list {
+        column-gap: 10px;
+    }
 
+    .skills .skills_item {
+        width: 450px;
+    }
+}
 
+@media ( max-width: 991px ) {
+    .container {
+        max-width: 768px;
+    }
+
+    .aboutme .aboutme__text {
+        width: 600px;
+    }
+}
+
+@media ( max-width: 767px ) {
+    .container {
+        max-width: 576px;
+    }
+    
+    .header {
+        position: relative;
+    }
+
+    .nav {
+        position: relative;
+        height: 50px;
+        
+        background-color: #3a3b3c;
+    }
+
+    .menu {
+        position: fixed;
+        z-index: 2;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        top: 0;
+        left: -100%;
+        width: 50%;
+        height: 100vh;
+        padding: 20px 15px;
+        background-color: rgba(0, 0, 0, .8);
+        transition: 0.6s all;
+    }
+
+    .menu__active {
+        left: 0;
+    }
+
+    .menu__item {
+        padding-right: 0;
+        margin: 10px 0;
+    }
+
+    .menu__link {
+        font-size: 20px;
+    }
+
+    .hamburger {
+        display: block;
+        position: absolute;
+        right: 10px;
+        top: 50%;
+        transform: translateY(-50%);
+        width: 26px;
+        height: 12px;
+    }
+    
+    .hamburger span {
+        display: block;
+        height: 2px;
+        width: 100%;
+        background-color: #ffffff;
+        margin-bottom: 2px;
+        transition: 0.5s all;
+    }
+    
+    .hamburger__active span {
+        margin-bottom: -2px;
+    }
+
+    .hamburger__active span:nth-child(1) {
+        transform: translateY(3px) rotate(-45deg);
+    }
+            
+    .hamburger__active span:nth-child(2) {
+        display: none;
+    }
+            
+    .hamburger__active span:nth-child(3) {
+        transform: translateY(3px) rotate(45deg);
+    }
+            
+    .header {
+        padding-top: 0;
+    }
+
+    .header .photo {
+        width: 150px;
+        height: 150px;
+
+        margin-top: 10px;
+    }
+
+    .header .photo img {
+        width: 150px;
+        height: 150px;
+    }
+
+    .header .info {
+        margin-top: 20px;
+    }
+
+    .header .name {
+        font-size: 24px;
+        line-height: 28px;
+    }
+
+    .header .role {
+        margin-top: 10px;
+        font-size: 20px;
+        line-height: 24px;
+    }
+
+    .header .contacts {
+        margin-top: 30px;
+        width: 300px;
+    }
+
+    .aboutme .aboutme__text {
+        width: 450px;
+    }
+
+    .skills {
+        font-size: 13px;
+    }
+
+    .skills__item .item__title {
+        font-size: 16px;
+    }
+
+    .projects__list {
+        flex-direction: column;
+        align-items: center;
+        row-gap: 30px;
+    }
+
+    .experience__wrapper {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .education .education_item {
+        width: 400px;
+        padding: 10px;
+    }
+
+    .examples .examples__wrapper {
+        width: 400px;
+        font-size: 10px;
+    }
+
+    .examples .codewars__title {
+        font-size: 16px;
+    }
+
+    .examples .examples__code {
+        width: 400px;
+    }
+}
+
+@media ( max-width: 575px ) {
+    .container {
+        max-width: 320px;
+    }
+
+    .aboutme .aboutme__text {
+        width: 280px;
+        padding: 0 5px;
+    }
+
+    .projects__list .project__item {
+        width: 260px;
+    }
+
+    .projects__list .project__image {
+        width: 260px;
+        height: 180px;
+    }
+
+    .experience__wrapper .experience_item {
+        width: 260px;
+        padding: 10px;
+    }
+
+    .education .education_item {
+        width: 260px;
+        padding: 10px;
+    }
+
+    .examples .examples__wrapper {
+        width: 260px;
+    }
+
+    .examples .examples__code {
+        width: 260px;
+    }
+
+    .footer .social {
+        flex-direction: column;
+        row-gap: 20px;
+    }
+}
