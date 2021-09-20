@@ -173,6 +173,7 @@ footer {
 .rs-logo img {
     display: block;
     height: 30px;
+    background: url("./images/rs_school_js.svg") center ( cover / center ) no-repeat;
 }
 
 .social p {
