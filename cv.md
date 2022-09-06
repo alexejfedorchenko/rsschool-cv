@@ -27,4 +27,3 @@ Perm State Technical University (2010 - 2016)
 
 ## English level
 B1 (Intermediate)
-
